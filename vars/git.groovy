@@ -2,6 +2,7 @@
 
 def first_time_execution = true
 def config(branch) {
+    echo "Comenzamos ejecución"
     if ( first_time_execution ) {
         sh """
         echo "Primera vez que ejecutamos con la rama $branch"
