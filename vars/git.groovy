@@ -4,8 +4,8 @@ import groovy.transform.Field
 @Field first_time_execution = true
 @Field project = ''
 
-def project(project) {
-    project = ${project}
+def project(projectName) {
+    project = projectName
     echo "Project: ${project}"
 }
 
