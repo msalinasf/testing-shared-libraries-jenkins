@@ -19,3 +19,14 @@ def checkout(branch) {
     echo "Nombre de la rama $branch"
     """
 }
+
+def merge(main, secondary) {
+    sh """
+    #!/bin/sh -xe
+    if [ -z "${secondary}" ]; then
+        echo "No branch found. Finishing stage."
+        exit 0
+    fi
+    echo "Merge ${secondary} into ${main}"
+    """
+}
