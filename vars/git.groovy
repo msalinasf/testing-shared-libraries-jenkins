@@ -5,7 +5,8 @@ def checkout(branch) {
     #!/bin/sh -xe
     # get hotfix branch
     # git checkout ${branch}
-    echo "${branch}"
+    echo "Nombre de la rama ${branch}"
+    echo "Nombre de la rama 2 $branch"
     '''
     echo "end"
 }
