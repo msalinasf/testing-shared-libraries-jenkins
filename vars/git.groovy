@@ -17,6 +17,7 @@ def checkIfProjectExists() {
 
 def config(branch) {
     checkIfProjectExists()
+    echo "Proyecto $project"
     echo "Comenzamos ejecución $first_time_execution"
     if ( first_time_execution ) {
         sh """
