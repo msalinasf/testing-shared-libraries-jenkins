@@ -1,16 +1,19 @@
+#!/usr/bin/env groovy
+
+def first_time_execution = true
+def config(branch) {
+    if ( first_time_execution ) {
+        sh """
+        echo "Primera vez que ejecutamos con la rama $branch"
+        """
+        first_time_execution = false
+    }
+    echo "Finalizamos ejecución"
+}
+
 def checkout(branch) {
-    // echo "Bye, ${branch}."
-    echo "begin ${branch}"
     sh """
     #!/bin/sh -xe
-    # get hotfix branch
-    # git checkout ${branch}
-    echo "Nombre de la rama ${branch}"
-    echo "Nombre de la rama 2 $branch"
-    echo "Nombre de la rama 3 $branch"
+    echo "Nombre de la rama $branch"
     """
-    sh '''
-    echo "cuarto comentario"
-    '''
-    echo "end ${branch}"
 }
