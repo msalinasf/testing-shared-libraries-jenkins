@@ -20,7 +20,7 @@ def checkout(branch) {
     """
 }
 
-def merge(main, secondary) {
+def merge(main, secondary = '') {
     sh """
     #!/bin/sh -xe
     if [ -z "${secondary}" ]; then
