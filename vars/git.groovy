@@ -6,7 +6,7 @@ import groovy.transform.Field
 @Field buildNumber2 = ''
 
 def project(projectName) {
-    String buildNumber = env.BUILD_NUMBER
+    String buildNumber = env.BUILDNUMBER
     project = projectName
     echo "Project: ${project}"
     echo "BuildNumber ${buildNumber}"
