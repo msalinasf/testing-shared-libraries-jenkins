@@ -11,8 +11,7 @@ def project(project) {
 
 def checkIfProjectExists() {
     if ( project == '' ) {
-        echo "No project found. You must call project(projectName) before this method"
-        return
+        error "No project found. You must call project(projectName) before this method"
     }
 }
 
