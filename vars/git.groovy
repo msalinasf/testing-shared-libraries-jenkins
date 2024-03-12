@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
+import groovy.transform.Field
 
-first_time_execution = true
+@Field first_time_execution = true
 def config(branch) {
     echo "Comenzamos ejecución $first_time_execution"
     if ( first_time_execution ) {
