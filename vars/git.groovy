@@ -5,7 +5,7 @@ def checkout(branch) {
     #!/bin/sh -xe
     # get hotfix branch
     # git checkout ${branch}
-    echo ${branch}
+    echo "${branch}"
     '''
     echo "end"
 }
