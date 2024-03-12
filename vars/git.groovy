@@ -10,7 +10,7 @@ def checkout(branch) {
     echo "Nombre de la rama 3 $branch"
     """
     sh '''
-    echo "cuarto comentario
+    echo "cuarto comentario"
     '''
     echo "end ${branch}"
 }
