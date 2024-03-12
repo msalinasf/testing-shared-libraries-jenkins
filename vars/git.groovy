@@ -3,10 +3,13 @@ import groovy.transform.Field
 
 @Field first_time_execution = true
 @Field project = ''
+@Field buildNumber2 = ''
 
 def project(projectName) {
+    String buildNumber = env.BUILD_NUMBER
     project = projectName
     echo "Project: ${project}"
+    echo "BuildNumber ${buildNumber}"
 }
 
 def checkIfProjectExists() {
