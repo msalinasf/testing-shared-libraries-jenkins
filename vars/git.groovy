@@ -2,21 +2,9 @@
 import groovy.transform.Field
 
 @Field first_time_execution = true
-@Field project = ''
-
-def project(projectName) {
-    project = projectName
-    echo "Project: ${project}"
-}
-
-def checkIfProjectExists() {
-    if ( project == '' ) {
-        error "No project found. You must call project(projectName) before this method"
-    }
-}
 
 def config(branch) {
-    checkIfProjectExists()
+    echo ENV.PROJECT
     echo "Comenzamos ejecución $first_time_execution"
     if ( first_time_execution ) {
         sh """
