@@ -7,7 +7,7 @@ def checkout(branch) {
     # git checkout ${branch}
     echo "Nombre de la rama ${branch}"
     echo "Nombre de la rama 2 $branch"
-    echo "Nombre de la rama 3 $branch
+    echo "Nombre de la rama 3 $branch"
     """
     sh '''
     echo "cuarto comentario
