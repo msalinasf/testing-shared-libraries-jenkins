@@ -38,6 +38,10 @@ def checkout(branch) {
     """
 }
 
+def getCurrentRelease() {
+    env.currentRelease = 'Release 220111'
+}
+
 def merge(main, secondary = '') {
     sh """
     #!/bin/sh -xe
