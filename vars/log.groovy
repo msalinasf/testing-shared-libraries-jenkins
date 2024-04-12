@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 def loadColors() {
     RED= '31'
     BLUE= '34'
