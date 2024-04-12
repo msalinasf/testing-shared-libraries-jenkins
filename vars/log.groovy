@@ -20,6 +20,10 @@ def loadColors() {
     POST= 'm'
 }
 
+def date(){
+    return new Date().format("yyyy-MM-dd HH:mm:ss")
+}
+
 def infoStage() {
     loadColors()
     date = date()
