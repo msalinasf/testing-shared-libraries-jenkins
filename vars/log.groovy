@@ -27,5 +27,5 @@ def date(){
 def infoStage() {
     loadColors()
     date = date()
-    sh"""echo "${PRE}${BOLD};${BLUE}${POST} [STAGE] - $date - ==================================== HOLAAAAA ========================================================== ${PRE}${NORMAL}${POST}" """
+    sh"""set +x; echo "${PRE}${BOLD};${BLUE}${POST} [STAGE] - $date - ==================================== HOLAAAAA ========================================================== ${PRE}${NORMAL}${POST}"; set -x;"""
 }
