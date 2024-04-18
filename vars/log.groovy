@@ -16,7 +16,7 @@ def loadColors() {
     ON_LIGHT_BLUE= '104'
     NORMAL= '0'
     BOLD= '1'
-    PRE= '\x1B['
+    PRE= '\e['
     POST= 'm'
 }
 
@@ -27,5 +27,5 @@ def date(){
 def infoStage() {
     loadColors()
     date = date()
-    sh"""set +x; printf "${PRE}${BOLD};${BLUE}${POST} [STAGE] - $date - ==================================== ${env.STAGE_NAME} ========================================================== ${PRE}${NORMAL}${POST}" """
+    sh"""set +x; echo -e "${PRE}${BOLD};${BLUE}${POST} [STAGE] - $date - ==================================== ${env.STAGE_NAME} ========================================================== ${PRE}${NORMAL}${POST}" """
 }
