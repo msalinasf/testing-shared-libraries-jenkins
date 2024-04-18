@@ -30,6 +30,6 @@ def infoStage() {
     sh"""
     #!/usr/bin/bash 
     set +x;
-    echo -e "${PRE}${BOLD};${BLUE}${POST} [STAGE] - $date - ==================================== ${env.STAGE_NAME} ========================================================== ${PRE}${NORMAL}${POST}" 
+    echo "${PRE}${BOLD};${BLUE}${POST} [STAGE] - $date - ==================================== ${env.STAGE_NAME} ========================================================== ${PRE}${NORMAL}${POST}" 
     """
 }
