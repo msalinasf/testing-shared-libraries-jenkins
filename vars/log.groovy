@@ -16,7 +16,7 @@ def loadColors() {
     ON_LIGHT_BLUE= '104'
     NORMAL= '0'
     BOLD= '1'
-    PRE= '\e['
+    PRE= '\x1B['
     POST= 'm'
 }
 
